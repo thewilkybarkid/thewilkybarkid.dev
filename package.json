@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "devDependencies": {
+    "@commitlint/config-conventional": "^11.0.0",
+    "commitlint": "^11.0.0",
+    "husky": "^4.3.7"
+  }
+}
