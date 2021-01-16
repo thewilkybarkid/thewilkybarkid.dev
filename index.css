@@ -40,3 +40,18 @@ a:link,
 a:visited {
   color: inherit;
 }
+
+.accounts {
+  display: flex;
+  list-style-type: none;
+  margin-block: 2rem 0;
+  padding-inline-start: 0;
+}
+
+.accounts li + li {
+  margin-inline-start: 2rem;
+}
+
+.accounts img {
+  block-size: 3rem;
+}
