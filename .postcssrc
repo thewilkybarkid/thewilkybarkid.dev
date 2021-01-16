@@ -1,0 +1,9 @@
+{
+  "modules": false,
+  "plugins": {
+    "postcss-logical": {
+      "dir": "ltr"
+    },
+    "autoprefixer": {}
+  }
+}
