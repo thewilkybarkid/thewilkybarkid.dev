@@ -39,9 +39,11 @@ jobs:
         with:
           name: dist
       - name: Deploy
-        uses: netlify/actions/cli@master
+        uses: nwtgck/actions-netlify@v1.1
         with:
-          args: deploy --dir=. --prod --message "Commit $GITHUB_SHA"
+          publish-dir: .
+          production-deploy: true
+          deploy-message: Commit $GITHUB_SHA
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
