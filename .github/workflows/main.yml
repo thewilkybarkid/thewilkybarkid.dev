@@ -24,3 +24,24 @@ jobs:
         run: npm ci --production
       - name: Build the site
         run: npm run build
+      - name: Upload build
+        uses: actions/upload-artifact@v2
+        with:
+          name: dist
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Download build
+        uses: actions/download-artifact@v2
+        with:
+          name: dist
+      - name: Deploy
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy --dir=. --prod --message "Commit $GITHUB_SHA"
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
