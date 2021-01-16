@@ -1,3 +1,5 @@
+@import url("./node_modules/@fontsource/caveat/latin-500.css");
+
 *,
 ::after,
 ::before {
@@ -11,6 +13,9 @@ html {
 body {
   background-color: rgb(240, 240, 240);
   color: rgb(54, 57, 69);
+  font-family: Caveat, serif;
+  font-size: calc(0.3vw + 0.3vh + 2em);
+  font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
