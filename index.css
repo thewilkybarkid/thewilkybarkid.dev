@@ -39,6 +39,14 @@ p {
 a:link,
 a:visited {
   color: inherit;
+  text-decoration-color: rgba(54, 57, 69, 0.5);
+  text-decoration-thickness: 0.05em;
+  text-underline-offset: 0.075em;
+}
+
+a:focus,
+a:hover {
+  text-decoration-color: currentColor;
 }
 
 .accounts {
