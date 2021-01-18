@@ -68,5 +68,7 @@ a:hover {
 }
 
 .accounts img {
+  display: block;
   block-size: 3rem;
+  inline-size: auto;
 }
