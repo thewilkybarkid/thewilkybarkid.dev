@@ -45,7 +45,8 @@ body {
 }
 
 main {
-  margin: 1rem;
+  margin-block: 1rem;
+  margin-inline: 2rem;
 }
 
 a:link,
