@@ -48,10 +48,6 @@ main {
   margin: 1rem;
 }
 
-p {
-  margin-block-start: 0;
-}
-
 a:link,
 a:visited {
   display: inline-block;
