@@ -5,9 +5,11 @@
     "@parcel/config-default": "^2.0.0-nightly.541",
     "@parcel/transformer-svgo": "^2.0.0-nightly.2163",
     "autoprefixer": "^10.2.1",
+    "del-cli": "^3.0.1",
     "parcel": "^2.0.0-nightly.535",
     "postcss-logical": "^4.0.2",
-    "posthtml-img-autosize": "^0.1.6"
+    "posthtml-img-autosize": "^0.1.6",
+    "subfont": "^5.2.5"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
@@ -16,6 +18,7 @@
   },
   "scripts": {
     "start": "parcel index.html --no-autoinstall",
-    "build": "parcel build index.html --public-url ./"
+    "build": "parcel build index.html --public-url ./",
+    "subset-fonts": "subfont --in-place --font-display=fallback --no-fallbacks dist/index.html && del 'dist/*.{woff,woff2}'"
   }
 }
