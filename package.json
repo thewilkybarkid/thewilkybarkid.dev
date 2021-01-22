@@ -9,6 +9,7 @@
     "parcel": "^2.0.0-nightly.535",
     "postcss-logical": "^4.0.2",
     "posthtml-img-autosize": "^0.1.6",
+    "posthtml-insert-at": "^0.2.7",
     "subfont": "^5.2.5"
   },
   "devDependencies": {
