@@ -20,8 +20,8 @@
     "husky": "^4.3.7"
   },
   "scripts": {
-    "start": "parcel index.html --no-autoinstall",
-    "build": "parcel build index.html --public-url ./ && cpy '.netlify/*' dist",
+    "start": "parcel index.html to-blog-or-not.html --no-autoinstall",
+    "build": "parcel build index.html to-blog-or-not.html --public-url ./ && cpy '.netlify/*' dist",
     "subset-fonts": "subfont --in-place --font-display=fallback --no-fallbacks dist/index.html && del 'dist/*.{woff,woff2}'"
   }
 }

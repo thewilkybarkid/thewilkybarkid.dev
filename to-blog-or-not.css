@@ -1,0 +1,168 @@
+*,
+::after,
+::before {
+  color: inherit;
+  box-sizing: border-box;
+  margin-block: unset;
+  margin-inline: auto;
+  padding: unset;
+  text-decoration-line: inherit;
+}
+
+body {
+  background-color: rgb(237, 241, 255);
+  color: rgb(40, 45, 60);
+  font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
+  font-size: calc(0.3vw + 0.3vh + 1em);
+  font-variant-numeric: oldstyle-nums proportional-nums;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+@media screen {
+  body {
+    min-inline-size: 320px;
+    padding-inline: 2em;
+    padding-block-end: 15vh;
+  }
+}
+
+:focus {
+  outline-color: rgba(40, 45, 60, 0.5);
+  outline-style: dotted;
+  outline-offset: 0.1em;
+  outline-width: 2px;
+}
+
+body > header,
+p {
+  max-inline-size: 50ch;
+}
+
+body > header time {
+  font-variant-numeric: lining-nums proportional-nums;
+  font-size: 0.8em;
+}
+
+@media screen {
+  body > header,
+  body > header + * {
+    margin-block-start: 10vh;
+  }
+}
+
+main > :first-child,
+* + p {
+  margin-block-start: 2em;
+}
+
+* + blockquote,
+blockquote + * {
+  margin-block-start: 3em;
+}
+
+blockquote,
+blockquote + * {
+  margin-block-start: 4em;
+}
+
+blockquote {
+  max-inline-size: 70ch;
+  border-block: 2px solid currentColor;
+  padding-block: 1em;
+}
+
+blockquote footer {
+  padding-inline-start: calc(1vw + 1em);
+  position: relative;
+}
+
+blockquote footer:last-child {
+  margin-block-start: 1em;
+}
+
+blockquote footer::before {
+  content: "\2014\200a";
+  position: absolute;
+  inline-size: calc(1vw + 1em);
+  inset-inline-start: 0;
+  text-align: end;
+}
+
+h1 {
+  font-size: calc(2vw + 2vh + 2em);
+  line-height: 1;
+  margin-block-end: 0.1em;
+}
+
+@media screen {
+  a:link,
+  a:visited {
+    text-decoration-color: rgba(54, 57, 69, 0.5);
+    text-decoration-thickness: 0.05em;
+    text-decoration-line: underline;
+    text-underline-offset: 0.075em;
+  }
+
+  a:focus,
+  a:hover {
+    text-decoration-color: currentColor;
+  }
+}
+
+@media print {
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+  }
+
+  [role="img"][aria-label]::after {
+    content: " (" attr(aria-label) ")";
+  }
+}
+
+dt {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+dt small {
+  font-size: 0.5em;
+  font-style: italic;
+}
+
+dd {
+  display: list-item;
+  list-style-position: outside;
+  padding-inline-start: 0;
+}
+
+dd + dd {
+  margin-block-start: 0.5em;
+}
+
+@media print {
+  mark {
+    text-decoration: underline;
+  }
+}
+
+@media screen {
+  mark {
+    border-start-start-radius: 0.8em;
+    border-start-end-radius: 0.3em;
+    border-end-start-radius: 0.3em;
+    border-end-end-radius: 0.8em;
+    margin-inline: -0.2em;
+    padding-inline: 0.2em;
+    background: linear-gradient(
+        to right,
+        rgba(255, 225, 0, 0.1),
+        rgba(255, 225, 0, 0.7) 4%,
+        rgba(255, 225, 0, 0.3)
+    );
+    box-decoration-break: clone;
+  }
+}
