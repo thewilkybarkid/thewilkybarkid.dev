@@ -3,9 +3,17 @@
     "posthtml-img-autosize": {
       "processEmptySize": true
     },
-    "posthtml-insert-at": {
-      "selector": "html",
-      "prepend": "<meta name=\"viewport\" content=\"width=device-width\">"
-    }
+    "posthtml-insert-at": [
+      {
+        "selector": "title",
+        "behavior": "outside",
+        "prepend": "<meta name=\"twitter:card\" content=\"summary\"><meta name=\"twitter:creator\" content=\"@thewilkybarkid\">"
+      },
+      {
+        "selector": "title",
+        "behavior": "outside",
+        "prepend": "<meta name=\"viewport\" content=\"width=device-width\">"
+      }
+    ]
   }
 }
