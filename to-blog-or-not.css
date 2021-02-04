@@ -1,3 +1,5 @@
+@import url("./node_modules/source-serif-pro/source-serif-pro.css");
+
 *,
 ::after,
 ::before {
@@ -12,7 +14,7 @@
 body {
   background-color: rgb(237, 241, 255);
   color: rgb(40, 45, 60);
-  font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
+  font-family: Source Serif Pro, Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
   font-size: calc(0.3vw + 0.3vh + 1em);
   font-variant-numeric: oldstyle-nums proportional-nums;
   line-height: 1.7;

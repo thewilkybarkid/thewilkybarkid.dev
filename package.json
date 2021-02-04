@@ -12,6 +12,7 @@
     "postcss-logical": "^4.0.2",
     "posthtml-img-autosize": "^0.1.6",
     "posthtml-insert-at": "^0.2.7",
+    "source-serif-pro": "^3.1.0",
     "subfont": "^5.2.5"
   },
   "devDependencies": {
@@ -22,6 +23,6 @@
   "scripts": {
     "start": "parcel index.html to-blog-or-not.html --no-autoinstall",
     "build": "parcel build index.html to-blog-or-not.html --public-url ./ && cpy '.netlify/*' dist",
-    "subset-fonts": "subfont --in-place --font-display=fallback --no-fallbacks dist/index.html && del 'dist/*.{woff,woff2}'"
+    "subset-fonts": "subfont --recursive --in-place --font-display=fallback --no-fallbacks dist/index.html && del 'dist/*.{otf,ttf,woff,woff2}'"
   }
 }
