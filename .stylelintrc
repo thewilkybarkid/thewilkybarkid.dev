@@ -1,0 +1,9 @@
+{
+  "extends": "stylelint-config-standard",
+  "ignoreFiles": [
+    "dist/**/*"
+  ],
+  "rules": {
+    "declaration-colon-newline-after": null
+  }
+}

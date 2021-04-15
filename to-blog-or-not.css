@@ -14,7 +14,7 @@
 body {
   background-color: rgb(237, 241, 255);
   color: rgb(40, 45, 60);
-  font-family: Source Serif, Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
+  font-family: 'Source Serif', Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
   font-size: calc(0.3vw + 0.3vh + 1em);
   font-variant-numeric: oldstyle-nums proportional-nums;
   line-height: 1.7;
@@ -160,10 +160,10 @@ dd + dd {
     margin-inline: -0.2em;
     padding-inline: 0.2em;
     background: linear-gradient(
-        to right,
-        rgba(255, 225, 0, 0.1),
-        rgba(255, 225, 0, 0.7) 4%,
-        rgba(255, 225, 0, 0.3)
+      to right,
+      rgba(255, 225, 0, 0.1),
+      rgba(255, 225, 0, 0.7) 4%,
+      rgba(255, 225, 0, 0.3)
     );
     box-decoration-break: clone;
   }
