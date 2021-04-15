@@ -12,7 +12,7 @@
     "postcss-logical": "^4.0.2",
     "posthtml-img-autosize": "^0.1.6",
     "posthtml-insert-at": "^0.2.7",
-    "source-serif-pro": "^3.1.0",
+    "source-serif": "^4.4.0",
     "subfont": "^5.4.1"
   },
   "devDependencies": {
