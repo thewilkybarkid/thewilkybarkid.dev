@@ -23,6 +23,6 @@
   "scripts": {
     "start": "parcel index.html to-blog-or-not.html --no-autoinstall",
     "build": "parcel build index.html to-blog-or-not.html --public-url ./ && cpy '.netlify/*' dist",
-    "subset-fonts": "subfont --recursive --in-place --font-display=fallback --no-fallbacks dist/index.html && del 'dist/*.{otf,ttf,woff,woff2}'"
+    "subset-fonts": "subfont --harfbuzz --recursive --in-place --font-display=fallback --no-fallbacks dist/index.html && del 'dist/*.{otf,ttf,woff,woff2}'"
   }
 }
