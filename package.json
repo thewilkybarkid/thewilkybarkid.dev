@@ -12,7 +12,7 @@
     "posthtml-img-autosize": "^0.1.6",
     "posthtml-insert-at": "^0.2.7",
     "source-serif": "^4.4.0",
-    "subfont": "^5.4.1"
+    "subfont": "^6.1.0"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
@@ -24,7 +24,7 @@
   "scripts": {
     "start": "parcel index.html to-blog-or-not.html --no-autoinstall",
     "build": "parcel build index.html to-blog-or-not.html --public-url ./ && cpy '.netlify/*' dist",
-    "subset-fonts": "subfont --harfbuzz --recursive --in-place --font-display=fallback --no-fallbacks dist/index.html && del 'dist/*.{otf,ttf,woff,woff2}'",
+    "subset-fonts": "subfont --recursive --in-place --font-display=fallback --no-fallbacks dist/index.html && del 'dist/*.{otf,ttf,woff,woff2}'",
     "stylelint": "stylelint --cache --cache-location '.stylelint/' '**/*.css'"
   }
 }
