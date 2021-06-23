@@ -17,7 +17,7 @@
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
-    "husky": "^4.3.7",
+    "husky": "^6.0.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0"
   },
@@ -25,6 +25,7 @@
     "start": "parcel index.html to-blog-or-not.html --no-autoinstall",
     "build": "parcel build index.html to-blog-or-not.html --public-url ./ && cpy '.netlify/*' dist",
     "subset-fonts": "subfont --recursive --in-place --font-display=fallback --no-fallbacks dist/index.html && del 'dist/*.{otf,ttf,woff,woff2}'",
-    "stylelint": "stylelint --cache --cache-location '.stylelint/' '**/*.css'"
+    "stylelint": "stylelint --cache --cache-location '.stylelint/' '**/*.css'",
+    "prepare": "husky install"
   }
 }
