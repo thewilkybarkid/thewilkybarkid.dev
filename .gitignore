@@ -1,3 +1,4 @@
 /.parcel-cache/
+/.stylelint/
 /dist/
 /node_modules/
