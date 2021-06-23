@@ -4,7 +4,9 @@
     "postcss-logical": {
       "dir": "ltr"
     },
-    "flex-gap-polyfill": {},
+    "flex-gap-polyfill": {
+      "only": true
+    },
     "autoprefixer": {}
   }
 }
