@@ -4,7 +4,7 @@
   "dependencies": {
     "@fontsource/caveat": "^4.1.0",
     "@parcel/transformer-svgo": "^2.0.0-beta.3.1",
-    "autoprefixer": "^10.2.1",
+    "autoprefixer": "^10.2.6",
     "cpy-cli": "^3.1.1",
     "del-cli": "^4.0.0",
     "flex-gap-polyfill": "^4.0.6",
