@@ -19,11 +19,15 @@
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "husky": "^6.0.0",
+    "npm-run-all": "^4.1.5",
+    "serve": "^12.0.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0"
   },
   "scripts": {
-    "start": "parcel index.html to-blog-or-not.html --no-autoinstall",
+    "watch": "parcel watch index.html to-blog-or-not.html --no-autoinstall",
+    "serve": "serve dist",
+    "start": "run-p watch serve",
     "build": "parcel build index.html to-blog-or-not.html --public-url ./ && cpy '.netlify/*' dist",
     "subset-fonts": "subfont --recursive --in-place --font-display=fallback --no-fallbacks dist/index.html && del 'dist/*.{otf,ttf,woff,woff2}'",
     "stylelint": "stylelint --cache --cache-location '.stylelint/' '**/*.css'",
