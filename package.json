@@ -25,10 +25,10 @@
     "stylelint-config-standard": "^22.0.0"
   },
   "scripts": {
-    "watch": "parcel watch index.html to-blog-or-not.html --no-autoinstall",
+    "watch": "parcel watch '*.html' --public-url ./ --no-autoinstall",
     "serve": "serve dist",
     "start": "run-p watch serve",
-    "build": "parcel build index.html to-blog-or-not.html --public-url ./ && cpy '.netlify/*' dist",
+    "build": "parcel build '*.html' --public-url ./ && cpy '.netlify/*' dist",
     "subset-fonts": "subfont --recursive --in-place --font-display=fallback --no-fallbacks dist/index.html && del 'dist/*.{otf,ttf,woff,woff2}'",
     "stylelint": "stylelint --cache --cache-location '.stylelint/' '**/*.css'",
     "clean": "del .parcel-cache .stylelint dist",
