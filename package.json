@@ -12,7 +12,7 @@
     "posthtml-img-autosize": "^0.1.6",
     "posthtml-insert-at": "^0.2.7",
     "source-serif": "^4.4.0",
-    "subfont": "^6.1.0"
+    "subfont": "^6.2.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
@@ -28,7 +28,7 @@
     "serve": "serve dist",
     "start": "run-p watch serve",
     "build": "parcel build '*.html' --public-url ./ && cpy '.netlify/*' dist",
-    "subset-fonts": "subfont --recursive --in-place --font-display=fallback --no-fallbacks dist/index.html && del 'dist/*.{otf,ttf,woff,woff2}'",
+    "subset-fonts": "subfont --in-place --relative-urls --font-display fallback --no-fallbacks --root dist && del 'dist/*.{otf,ttf,woff,woff2}'",
     "stylelint": "stylelint --cache --cache-location '.stylelint/' '**/*.css'",
     "clean": "del .parcel-cache .stylelint dist",
     "prepare": "which husky && husky install || true"
