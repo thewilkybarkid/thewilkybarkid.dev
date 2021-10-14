@@ -8,7 +8,7 @@
     "del-cli": "^4.0.1",
     "flex-gap-polyfill": "^4.0.6",
     "parcel": "^2.0.0",
-    "postcss-logical": "^4.0.2",
+    "postcss-logical": "^5.0.0",
     "posthtml-img-autosize": "^0.1.6",
     "posthtml-insert-at": "^0.2.7",
     "source-serif": "^4.4.0",
