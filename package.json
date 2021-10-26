@@ -12,7 +12,7 @@
     "posthtml-img-autosize": "^0.1.6",
     "posthtml-insert-at": "^0.2.7",
     "source-serif": "^4.4.0",
-    "subfont": "^6.3.0"
+    "subfont": "^6.3.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.2.1",
