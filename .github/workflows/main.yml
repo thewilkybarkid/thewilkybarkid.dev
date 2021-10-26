@@ -7,7 +7,7 @@ on:
 jobs:
 
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - name: Set up Node.js
@@ -29,7 +29,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Download build
         uses: actions/download-artifact@v2
